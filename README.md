@@ -2,9 +2,8 @@
 
 ## Amigos
 
-##Project description:- 
-### We are developing a website with a greeting card shop. where customers can select cards according to the occasion.
-
+## Project description:- 
+* We are developing a website with a greeting card shop. where customers can select cards according to the occasion.
 * creating sign in and signup access to user
 * Based on occasion, creating different types of greeting cards templates.
 * Database to store user activity such as login credentials, orders, order history and recently.
