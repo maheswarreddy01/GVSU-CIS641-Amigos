@@ -9,7 +9,7 @@ Project description (~1 paragraph)(Pending...)
 * [Maheswar Reddy Peram](https://github.com/maheswarreddy01/CIS641-HW2-Peram/)(Role 1, Role 2)
 * [Harthik Chowdary Ravipati](https://github.com/harthik27/CIS641-HW2-Ravipati)(Role 3, Role 4)
 * [Chetana Alekhya Reddy Gorre](https://github.com/ChetanaAlekhya/CIS641-HW2-Gorre) (Role 5, Role 6)
-* [Thummala SriramCharan] (https://github.com/Thummalasriram44 (Role 7, Role 8)
+* [Thummala SriramCharan](https://github.com/Thummalasriram44) (Role 7, Role 8)
 
 ## Prerequisites
 
