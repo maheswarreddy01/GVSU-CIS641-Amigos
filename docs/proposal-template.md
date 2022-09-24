@@ -1,6 +1,6 @@
 Team name:
 
-Team members:
+Team members: Harthik Chowdary Ravipati (G02487439)
 
 # Introduction
 
