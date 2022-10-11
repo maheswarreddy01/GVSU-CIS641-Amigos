@@ -16,7 +16,7 @@
 * [Chetana Alekhya Reddy Gorre](https://github.com/ChetanaAlekhya/CIS641-HW2-Gorre)
 * [Thummala SriramCharan](https://github.com/Thummalasriram44/CIS641-HW2-Thummala)
 
-##Links
+## Links
 * [Proposal Template](https://github.com/maheswarreddy01/GVSU-CIS641-Amigos/blob/master/docs/proposal-template.md)
 ## Prerequisites
 
