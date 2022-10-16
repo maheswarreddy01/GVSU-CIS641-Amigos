@@ -1,12 +1,7 @@
 # AMIGOS
 
-## Project description:- 
-* We are developing a website with a greeting card shop. where customers can select cards according to the occasion.
-* creating sign in and signup access to user
-* Based on occasion, creating different types of greeting cards templates.
-* Database to store user activity such as login credentials, orders, order history and recently.
-* viewed cards and products in cart.
-* Dashboard analytics based on user activity.
+## Project Overview:- 
+* The documents specifies detailed description of the requirements for "Giftisp application". Giftisp is an online platform, which eases customers to select the greeting card of their interest based on the occasions without going to store. This application helps customers to select card from wide number of varieties.
 
 
 ## Team Members and Roles
@@ -17,7 +12,9 @@
 * [Thummala SriramCharan](https://github.com/Thummalasriram44/CIS641-HW2-Thummala)
 
 ## Links
+
 * [Proposal Template](https://github.com/maheswarreddy01/GVSU-CIS641-Amigos/blob/master/docs/proposal-template.md)
+* [SRS](https://github.com/maheswarreddy01/GVSU-CIS641-Amigos/blob/master/docs/proposal-template.md)
 ## Prerequisites
 
 ## Run Instructions
