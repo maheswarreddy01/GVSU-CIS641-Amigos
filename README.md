@@ -14,7 +14,7 @@
 ## Links
 
 * [Proposal Template](https://github.com/maheswarreddy01/GVSU-CIS641-Amigos/blob/master/docs/proposal-template.md)
-* [SRS](https://github.com/maheswarreddy01/GVSU-CIS641-Amigos/blob/master/docs/proposal-template.md)
+* [SRS](https://github.com/maheswarreddy01/GVSU-CIS641-Amigos/blob/master/docs/software_requirements_specification.md)
 ## Prerequisites
 
 ## Run Instructions
