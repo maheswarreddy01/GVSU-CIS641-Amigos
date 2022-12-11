@@ -1,6 +1,9 @@
 # Overview 
 The SRS document specifies the working example of our website “Gift me!”. This document lists the functional and non-functional requirements of our website. Gift me! is an online platform, which eases customers to select the greeting card of their interest based on the occasions without going to store. This application helps customers to select card from wide number of varieties.
+
 # Software Requirements
+Based on the clients requirements such as Funtional and Non functional requirements. Funtional requirements define the exact functionality required by the client and every developer works on. The Non functional requirements define the accuracy, performance and security of the system. For front end we used Angular JS , for database MongoDB and for back end we used Express and Node JS.
+
 
 ## Functional Requirements
 ### Login 
