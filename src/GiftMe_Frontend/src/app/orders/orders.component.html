@@ -1,0 +1,22 @@
+<div *ngIf="products.length > 0" fxLayoutAlign="center start" class="cart-container" fxLayoutGap="20px">
+    <div fxLayout="column" fxLayoutAlign="start start" fxFlex="70">
+        <p>Your Orders</p>
+        <div class="product-list">
+            <div class="product" style="" *ngFor="let pi of products;let j=index">
+                <div class="" *ngFor="let product of pi['productId'];let i=index">
+                    <div class="" fxLayoutAlign="space-between center">
+                        <div fxFlex="10"><img height="70px" width="70px" src={{product.img}} alt=""></div>
+                        <div fxFlex="40">
+                            {{product.name}}
+                        </div>
+                    </div>
+                </div>
+                    <div>
+                        TOTAL PRICE: <span style="size: 1rem;">{{pi['total']}}</span>
+                    </div>
+                    <hr style="border-top: dotted 1px;" />
+            </div>
+
+        </div>
+    </div>
+</div>

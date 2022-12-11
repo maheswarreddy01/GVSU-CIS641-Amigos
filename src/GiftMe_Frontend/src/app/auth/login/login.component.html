@@ -1,0 +1,139 @@
+<div fxLayout="row" fxLayoutAlign="center center" class="login-container">
+  <div fxFlex="65" fxFlex.xs="0" fxFlex.sm="0" class="left-container" style="margin-left: -150px;">
+    <video height="100%" width="100%" autoplay loop src="../../../assets/Giftme!.mp4"></video>
+  </div>
+  <div fxFlex.sm="100" fxFlex.xs="100" fxFlex="45" class="right-continer" fxLayout="column"
+    fxLayoutAlign="center center">
+    <img height="150px" width="150px" src="../../../assets/Gift me! logo.png" alt="" srcset="">
+    <form *ngIf="!otp_verification && !forgot.click" fxLayout="column" fxLayoutGap="5px" fxLayoutAlign="start center"
+      (ngSubmit)="formSubmit(signInDetails.value)" [formGroup]="signInDetails">
+
+      <h1>Welcome back!</h1>
+      <!-- <div ngIf="true"> -->
+
+        <mat-form-field style="width: 350px;" *ngIf="submittionType=='Sign Up'" class="example-full-width"
+          appearance="outline">
+          <mat-label>Name</mat-label>
+          <input formControlName="name" matInput>
+        </mat-form-field>
+        <mat-form-field style="width: 350px;" class="example-full-width" appearance="outline">
+          <mat-label>Email</mat-label>
+          <input width="350px" formControlName="email" type="email" matInput>
+        </mat-form-field>
+        <mat-form-field style="width: 350px;" *ngIf="submittionType=='Sign Up'" appearance="outline">
+          <mat-label>Gender</mat-label>
+          <mat-select formControlName="gender">
+            <mat-option value="Male">Male</mat-option>
+            <mat-option value="Female">Female</mat-option>
+            <mat-option value="other">Other</mat-option>
+          </mat-select>
+        </mat-form-field>
+        <mat-form-field style="width: 350px;" class="example-full-width" appearance="outline">
+          <mat-label>Password</mat-label>
+          <input matInput formControlName="password" type="password">
+        </mat-form-field>
+        <button *ngIf="submittionType == 'Sign Up'" [disabled]="signInDetails.invalid" color="primary" type="submit"
+          mat-raised-button>Sign Up!</button>
+        <button *ngIf="submittionType == 'Sign In'"
+          [disabled]="signInDetails.controls.email.invalid || signInDetails.controls.password.invalid" color="primary"
+          type="submit" mat-raised-button>Sign In!</button>
+        <p>{{submittionType == 'Sign Up' ? 'Already have an account?' : 'New here?'}} <span
+            (click)="changeSubmittionType()" class="signupurl">{{submittionType == 'Sign Up' ? 'Sign In!' : 'Sign
+            Up!'}} </span> <span style="margin-left: 10px;" class="signupurl" (click)="forgotpas('click')">{{submittionType == 'Sign Up' ? '' :
+            'Forgot Password!'}}</span></p>
+      <!-- </div> -->
+      <!-- <div *ngIf="forgot.click">
+
+        <mat-form-field style="width: 350px;" class="example-full-width" *ngIf="!forgot.email" appearance="outline">
+          <mat-label>Email</mat-label>
+          <input width="350px" formControlName="email" type="email" matInput>
+        </mat-form-field>
+
+        <mat-form-field style="width: 350px;" class="example-full-width" *ngIf="forgot.email" appearance="outline">
+          <mat-label>Password</mat-label>
+          <input matInput formControlName="password" type="password">
+        </mat-form-field>
+        <mat-form-field style="width: 350px;" class="example-full-width" *ngIf="forgot.email" appearance="outline">
+          <mat-label>Confirm Password</mat-label>
+          <input matInput formControlName="password" type="password">
+        </mat-form-field>
+        <button *ngIf="submittionType == 'Sign Up'" [disabled]="signInDetails.invalid" color="primary" type="submit"
+          mat-raised-button>Sign Up!</button>
+        <button *ngIf="submittionType == 'Sign In'"
+          [disabled]="signInDetails.controls.email.invalid || signInDetails.controls.password.invalid" color="primary"
+          type="submit" mat-raised-button>Sign In!</button>
+        <p>{{submittionType == 'Sign Up' ? 'Already have an account?' : 'New here?'}} <span
+            (click)="changeSubmittionType(true)" class="signupurl">{{submittionType == 'Sign Up' ? 'Sign In!' : 'Sign
+            Up!'}} </span> <span style="margin-left: 10px;" class="signupurl">{{submittionType == 'Sign Up' ? '' :
+            'Forgot Password!'}}</span></p>
+
+            <div fxLayout="column" *ngIf="forgot.otp_verificationforgot">
+              <p>An OTP has been sent your email!</p>
+              <mat-form-field style="width: 350px;" appearance="outline">
+                <mat-label>OTP</mat-label>
+                <input placeholder="Enter your otp here..." matInput type="text" [formControl]="otp">
+              </mat-form-field>
+              <button [disabled]="otp.value?.length != 6" mat-flat-button color="primary" (click)="signUp()">Validate</button>
+              <br>
+              <button (click)="otp_verification = false" mat-stroked-button color="primary">Back</button>
+        
+        
+            </div>
+      </div> -->
+    </form>
+    <form *ngIf="forgot.click" fxLayout="column" fxLayoutGap="5px" fxLayoutAlign="start center"
+      (ngSubmit)="formSubmit(signInDetails.value)" [formGroup]="signInDetails">
+
+      <h1>Welcome back!</h1>
+
+        <mat-form-field style="width: 350px;" class="example-full-width" *ngIf="!forgot.email && !forgot.otp_verificationforgot" appearance="outline">
+          <mat-label>Email</mat-label>
+          <input width="350px" formControlName="email" type="email" matInput>
+        </mat-form-field>
+
+        <mat-form-field style="width: 350px;" class="example-full-width" *ngIf="forgot.email" appearance="outline">
+          <mat-label>Password</mat-label>
+          <input matInput formControlName="password" type="password">
+        </mat-form-field>
+        <mat-form-field style="width: 350px;" class="example-full-width" *ngIf="forgot.email" appearance="outline">
+          <mat-label>Confirm Password</mat-label>
+          <input matInput formControlName="password" type="password">
+        </mat-form-field>
+        <button *ngIf="submittionType == 'Sign Up'" [disabled]="signInDetails.invalid" color="primary" type="submit"
+          mat-raised-button>Sign Up!</button>
+        <button *ngIf="!forgot.otp_verificationforgot && !forgot.email"
+        (click)="forgotpas('email')" [disabled]="signInDetails.controls.email.invalid || signInDetails.controls.password.invalid" color="primary"
+          type="submit" mat-raised-button>Sign In!</button>
+          <button *ngIf="forgot.email"
+        (click)="forgotpas('pass')" [disabled]="signInDetails.controls.email.invalid || signInDetails.controls.password.invalid" color="primary"
+          type="submit" mat-raised-button>Sign In!</button>
+        <p>{{submittionType == 'Sign Up' ? 'Already have an account?' : 'New here?'}} <span
+            (click)="changeSubmittionType(true)" class="signupurl">Sign In!</span></p>
+
+            <div fxLayout="column" *ngIf="forgot.otp_verificationforgot">
+              <p>An OTP has been sent your email!</p>
+              <mat-form-field style="width: 350px;" appearance="outline">
+                <mat-label>OTP</mat-label>
+                <input placeholder="Enter your otp here..." matInput type="text" [formControl]="otp">
+              </mat-form-field>
+              <button [disabled]="otp.value?.length != 6" mat-flat-button color="primary" (click)="forgotpas('otp')">Validate</button>
+              <br>
+            </div>
+    </form>
+    <div fxLayout="column" *ngIf="otp_verification">
+      <p>An OTP has been sent your email!</p>
+      <mat-form-field style="width: 350px;" appearance="outline">
+        <mat-label>OTP</mat-label>
+        <input placeholder="Enter your otp here..." matInput type="text" [formControl]="otp">
+      </mat-form-field>
+      <button [disabled]="otp.value?.length != 6" mat-flat-button color="primary" (click)="signUp()">Validate</button>
+      <br>
+      <button (click)="otp_verification = false" mat-stroked-button color="primary">Back</button>
+
+
+    </div>
+  </div>
+
+
+
+</div>

@@ -1,0 +1,8 @@
+<div style="font-family: poppins;" fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="10px">
+    <p>One last step! </p>
+    <ng-container *ngIf="elementsOptions?.clientSecret as clientSecret">
+      <ngx-stripe-payment [clientSecret]="clientSecret">
+      </ngx-stripe-payment>
+    </ng-container>
+    <button class="pay-button" (click)="pay()">PAY</button>
+  </div>

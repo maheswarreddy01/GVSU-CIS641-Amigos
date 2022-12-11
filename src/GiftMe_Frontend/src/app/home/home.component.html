@@ -1,0 +1,70 @@
+<div class="home-container" fxLayout="column" fxLayoutAlign="center center">
+    <div class="poster-wrapper">
+        <div class="posters">
+          <div class="poster"><img src="../../assets/backgrounds/2.png" alt=""></div>
+            <div class="poster"><img src="../../assets/backgrounds/1.png" alt=""></div>
+            
+            <div class="poster"><img src="../../assets/backgrounds/3.png" alt=""></div>
+        </div>
+    </div>
+    <br>
+    <div fxLayoutAlign="space-between center" style="width:90%">
+        <h2>Greeting Cards</h2>
+        <div>
+            <mat-form-field class="filter-class" appearance="outline">
+                <mat-label>Filters</mat-label>
+                <mat-select (selectionChange)="applyFilters()" [formControl]="filters" multiple>
+                  <mat-select-trigger>
+                    {{filters.value?.[0] || ''}}
+                    <span *ngIf="(filters.value?.length || 0) > 1" class="example-additional-selection">
+                      (+{{(filters.value?.length || 0) - 1}} {{filters.value?.length === 2 ? 'other' : 'others'}})
+                    </span>
+                  </mat-select-trigger>
+                  <mat-option *ngFor="let filter of filtersList" [value]="filter">{{filter}} cards</mat-option>
+                </mat-select>
+              </mat-form-field>
+
+        </div>
+    </div>
+     <div class="gift-cards-list" fxLayout="row wrap" fxLayoutAlign="center center">
+        <div *ngFor="let card of greetingcards_filter_list.length <= 0 ? greetingcards : greetingcards_filter_list">
+            <div (click)="cardClicked(card)" id="card-div" class="card" fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="10px">
+                <div fxFlex="60">
+                     <img width="200px" height="200px" src={{card.img}} alt="" srcset="">
+                </div>
+                <div fxFlex="30" fxLayout="column" fxLayoutAlign="start start" fxLayoutGap="10px" class="card-details">
+                       <div [title]="card.name" class="card-title" fxFlex="70">{{(card.name.length>30)? (card.name | slice:0:28)+'...':(card.name) }}</div>
+                       <div fxFlex="30" class="add-to-card-div" fxLayoutAlign="space-between start">
+                        <div style="color: gray;">${{card.amount}}</div> 
+                        <!-- <button *ngIf="!card.cart" (click)="addToCart($event,card,'add')" class="add-to-cart-button"><span class="material-symbols-outlined">
+                          delete
+                          </span></button> -->
+                        <button *ngIf="!card.cart" (click)="addToCart($event,card,'add')" class="add-to-cart-button">Add to bag</button>
+                        <div  fxLayout fxLayoutAlign="space-around center" class="cart-number"  style="border:1px solid black ;" *ngIf="card.cart">
+                         <div (click)="addToCart($event,card,'minus')" class="operator">-</div>
+                         <div>{{card.cart}}</div>
+                         <div (click)="addToCart($event,card,'add')" class="operator">+</div>
+                        </div>
+                       
+                       </div>
+                </div>
+         </div>
+        </div>
+        <div class="no-data" fxLayout="column" fxLayoutAlign="center center" *ngIf="greetingcards.length == 0">
+                 <div>
+                  <mat-icon>
+                    <span class="material-symbols-outlined">
+                      card_membership
+                      </span>
+                   </mat-icon>
+                 </div>
+                 <div>
+                  <h2>Sorry, Trouble loading the data!</h2>
+                 </div>
+         
+                
+        </div>
+       
+        
+     </div>
+</div>

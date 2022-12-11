@@ -1,0 +1,20 @@
+<div fxLayout="row wrap" fxLayout.sm="column" fxLayoutAlign="center center" class="product-container">
+   <div fxFlex="25" fxLayout="column" fxLayoutAlign="center center">
+    <span>{{product.name}}</span>
+    <span style="font-size: 10px;">Category: {{product.category}}</span>
+   </div>
+   <div class="floating-image" fxFlex="60" fxLayoutAlign="center center">
+    <img style="height: 500px; width:500px" src={{product.img}} alt="" srcset="">
+   </div>
+    <div fxFlex="15" fxLayout="column" fxLayoutAlign="center center">
+        <span>$ {{product.amount}}</span>
+        <span style="font-size: 10px;">Taxes not Included!</span>
+        <br>
+        <button (click)="addToCart(product,'add')" *ngIf="!product.cart" class="add-to-cart-button">Add to bag</button>
+        <div  fxLayout fxLayoutAlign="space-around center" class="cart-number"  style="border:1px solid black ;" *ngIf="product.cart > 0">
+            <div (click)="addToCart(product,'minus')" class="operator">-</div>
+            <div>{{product.cart}}</div>
+            <div (click)="addToCart(product,'add')" class="operator">+</div>
+           </div>
+    </div>
+</div>

@@ -1,0 +1,81 @@
+<div *ngIf="cartProducts.length > 0" fxLayoutAlign="center start" class="cart-container" fxLayoutGap="20px"> 
+    <div fxLayout="column" fxLayoutAlign="start start" fxFlex="70">
+       <p>Your cart</p>
+        <div class="product-list" *ngFor="let product of cartProducts;let i=index">
+            <div class="product" fxLayoutAlign="space-between center">
+              <div (click)="productCount(i,'delete')" fxFlex="10">
+                <mat-icon>
+                  <span class="material-symbols-outlined">
+                    delete
+                    </span>
+                </mat-icon>
+              </div>
+            <div fxFlex="10"><img height="70px" width="70px" src={{product.img}} alt=""></div>
+            <div fxFlex="40">
+             {{product.name}}
+            </div>
+            <div fxFlex="10" fxLayout fxLayoutAlign="space-around center" class="cart-number"  style="border:1px solid black ;" *ngIf="product.cart">
+                <div (click)="productCount(i,'minus')"  class="operator">-</div>
+                <div>{{product.cart}}</div>
+                <div (click)="productCount(i,'add')" class="operator">+</div>
+               </div>
+            <div fxLayoutAlign="end center" fxFlex="20">
+              $ {{product.amount * product.cart}}
+            </div>
+        </div>
+        </div>
+    </div>
+    <div fxLayout="column" fxFlex="30">
+      <div fxLayout="column">
+        <p>Shipping</p>
+       <form fxLayout="row wrap" fxLayoutAlign="space-around start" [formGroup]="addressDetails">
+        <mat-form-field class="shipping-class" appearance="outline">
+          <mat-label>First Name</mat-label>
+          <input formControlName="firstName" matInput>
+        </mat-form-field>
+        <mat-form-field class="shipping-class" appearance="outline">
+          <mat-label>Last Name</mat-label>
+          <input formControlName="lastName" matInput>
+        </mat-form-field>
+        <mat-form-field fxFlex="100" class="shipping-class" appearance="outline">
+          <mat-label>Address</mat-label>
+          <input  formControlName="address" matInput >
+        </mat-form-field>
+        <mat-form-field class="shipping-class" appearance="outline">
+          <mat-label>Country</mat-label>
+          <input  formControlName="country" matInput >
+        </mat-form-field>
+        <mat-form-field class="shipping-class" appearance="outline">
+          <mat-label>State</mat-label>
+          <input formControlName="state" matInput >
+        </mat-form-field>
+        
+        <mat-form-field class="shipping-class" appearance="outline">
+          <mat-label>Pincode</mat-label>
+          <input formControlName="pincode" matInput >
+        </mat-form-field>
+       </form>
+      
+      </div>
+      <div  fxLayout="column" fxLayoutAlign="start start">
+        <p>Summary</p>
+        <div style="width: 100%;" fxLayoutAlign="space-between center"><span>Total:  </span> <span>{{totalCartValue}} $</span></div>
+        <div style="width: 100%;" fxLayoutAlign="space-between center"><span>Taxes : </span><span>{{((6.25/100)*totalCartValue).toFixed(2)}} $</span></div>
+         <div class="hr-line"> </div>
+         <div style="width: 100%;" fxLayoutAlign="space-between center"><span>Grand Total : </span><span>{{(_totalAmount).toFixed(2)}} $</span></div>
+      </div>
+      <br> <br>
+      <button (click)="checkoutPage()" class="checkout-button">Go to payment</button>
+    </div>
+</div>
+
+
+
+<div class="empty-cart" fxLayout="column" fxLayoutAlign="center center" *ngIf="cartProducts.length == 0">
+        <mat-icon><span class="material-symbols-outlined">
+          favorite
+          </span></mat-icon>
+          <h2>No products added to your cart yet!</h2>
+          <p routerLink="/home">
+            <- Go back to Home page</p>
+</div>
