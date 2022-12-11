@@ -138,28 +138,44 @@ In the past, individuals sent greeting cards to their loved ones and well-wisher
 **How will you ensure that it any discovered issues are resolved?**
 The issues discovered during the development of the application can be resolved on performing web testing, before the code is deployed to end user. Functionality of the system based on the client requirements, security and the accuracy of the system are the main aspects where testing need to be performed thoroughly. Functional testing is carried out to verify the functionality of attributes such as UI, database, security, APIs. If user missed any mandatory input field, an error message shall be displayed.  Business flow is checked from beginning to end, which guides the user across numerous web pages to complete the task. Verified numerous tests on taking a negative scenario and verified if relevant error messages are getting displayed or not. Integration testing is performed to check if the buttons and links are working as expected and redirects to the expected page. If the customer requests any change management modifications, the complete program must be tested repeatedly from beginning to end to ensure that there has been no failure.
 
-
-
 # Traceability links
-<Description of this section>
+Traceability is the capability which is used to trace about the tasks that are going on in the development and also used to find the records of the tasks.
+  
 ## Use Case Diagram Traceability
+  [Login use case diagram](https://github.com/maheswarreddy01/GVSU-CIS641-Amigos/blob/master/artifacts/login_use_case_diagram.jpg)
+  [Addcart usecase diagram](https://github.com/maheswarreddy01/GVSU-CIS641-Amigos/blob/master/artifacts/addcart_usecase_diagram.jpg)
+  [Activity diagram placing order](https://github.com/maheswarreddy01/GVSU-CIS641-Amigos/blob/master/artifacts/activity_diagram_placing_order.jpg)
 | Artifact ID | Artifact Name | Requirement ID |
 | :-------------: | :----------: | :----------: |
-| UseCase1 | Move Player | FR5 |
-| … | … | … |
+| UseCase1 | User login |FR1, FR2, FR4, FR5, NFR1, NFR2, NFR10, NFR21, NFR22, NFR23|
+| UseCase2 | Add to cart |FR1, FR2, FR21, FR23, FR24, FR25, NFR1, NFR2, NFR7, NFR17, NFR21, NFR24|  
+| UseCase3 | Product Info |FR1, FR2, FR12, FR16, FR17, FR19, NFR1, NFR2, NFR7, NFR21, NFR22|  
+| UseCase4 | Payment |FR1, FR2, FR26, FR27, FR33, FR34, FR35, FR36, FR37, FR38, FR39, NFR1, NFR4, NFR1, NFR21, NFR22, NFR25|
+
 ## Class Diagram Traceability
+
+ [class Diagram](https://github.com/maheswarreddy01/GVSU-CIS641-Amigos/blob/master/artifacts/class_diagram.jpg)
+
 | Artifact Name | Requirement ID |
 | :-------------: |:----------: |
-| classPlayer | NFR3, FR5 |
-| … | … | … |
+| Login | FR1, FR2, FR4, FR5, NFR1, NFR2, NFR10, NFR21, NFR22, NFR23|
+| Signup | FR6, FR7, FR8, FR9, FR10, NFR2, NFR10, NFR21, NFR22, NFR23|
+| Product | FR1, FR2, FR16, FR17, FR18, FR19, FR21, FR22, NFR1, NFR2, NFR7, NFR17, NFR21, NFR24|
+| Cart | FR1, FR2, FR21, FR23, FR24, FR25, NFR1, NFR2, NFR7, NFR17, NFR21, NFR24|
+| Order | FR1, FR2, FR21, FR22, FR26, FR27, FR33, FR34, FR40, FR41, FR42, NFR1, NFR4, NFR1, NFR21, NFR22, NFR25|
+| Payment | FR1, FR2, FR26, FR27, FR33, FR34, FR35, FR36, FR37, FR38, FR39, NFR1, NFR4, NFR1, NFR21, NFR22, NFR25|
+| Forgetpassword | FR1, FR2, FR5, NFR1, NFR2, NFR10, NFR21, NFR22, NFR23|
+
+
 ## Activity Diagram Traceability
-<In this case, it makes more sense (I think, feel free to disagree) to link
-to the file and to those requirements impacted>
+
+ [Activity diagram placing order](https://github.com/maheswarreddy01/GVSU-CIS641-Amigos/blob/master/artifacts/activity_diagram_placing_order.jpg)
+ [Activity diagram based on search](https://github.com/maheswarreddy01/GVSU-CIS641-Amigos/blob/master/artifacts/activity_diagram_based_on_search.jpg)
+
 | Artifact ID | Artifact Name | Requirement ID |
 | :-------------: | :----------: | :----------: |
-| <filename> | Handle Player Input | FR1-5, NFR2 |
-| … | … | … |
-
+| ActivityDiagram-1 | Search based | FR1, FR2, FR6, FR7, FR8, FR9, FR21, FR22, NFR1, NFR2, NFR7, NFR21, NFR22|
+| ActivityDiagram-2 | Order placed | FR1, FR2, FR6, FR7, FR8, FR9, FR21, FR22, FR26, FR27, FR33, FR34, FR40, FR41, FR42, NFR1, NFR4, NFR1, NFR21, NFR22, NFR25|
 
 
 # Software Artifacts
@@ -168,7 +184,7 @@ to the file and to those requirements impacted>
 * [Activity diagram based on search](https://github.com/maheswarreddy01/GVSU-CIS641-Amigos/blob/master/artifacts/activity_diagram_based_on_search.jpg)
 * [Login use case diagram](https://github.com/maheswarreddy01/GVSU-CIS641-Amigos/blob/master/artifacts/login_use_case_diagram.jpg)
 * [Addcart usecase diagram](https://github.com/maheswarreddy01/GVSU-CIS641-Amigos/blob/master/artifacts/addcart_usecase_diagram.jpg)
-* [Activity diagram placing order.jpg](https://github.com/maheswarreddy01/GVSU-CIS641-Amigos/blob/master/artifacts/activity_diagram_placing_order.jpg)
+* [Activity diagram placing order](https://github.com/maheswarreddy01/GVSU-CIS641-Amigos/blob/master/artifacts/activity_diagram_placing_order.jpg)
 * [class Diagram](https://github.com/maheswarreddy01/GVSU-CIS641-Amigos/blob/master/artifacts/class_diagram.jpg)
 * [Project Code](https://github.com/maheswarreddy01/GVSU-CIS641-Amigos/tree/master/src)
 
