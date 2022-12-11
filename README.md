@@ -17,6 +17,9 @@
 * [SRS](https://github.com/maheswarreddy01/GVSU-CIS641-Amigos/blob/master/docs/software_requirements_specification.md)
 ## Prerequisites
 
+** To understand the project you must have knowledge in below technologies
+** AngularJs, Nodejs, ExpressJs, MongoDB.
+
 ## Run Instructions
 Placeholder for source code
 
