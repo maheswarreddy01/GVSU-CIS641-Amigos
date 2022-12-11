@@ -167,4 +167,7 @@ to the file and to those requirements impacted>
 * [Activity diagram placing order](https://github.com/maheswarreddy01/GVSU-CIS641-Amigos/blob/master/artifacts/activity_diagram_placing_order.jpg)
 * [Activity diagram based on search](https://github.com/maheswarreddy01/GVSU-CIS641-Amigos/blob/master/artifacts/activity_diagram_based_on_search.jpg)
 * [Login use case diagram](https://github.com/maheswarreddy01/GVSU-CIS641-Amigos/blob/master/artifacts/login_use_case_diagram.jpg)
+* [Login use case diagram](https://github.com/maheswarreddy01/GVSU-CIS641-Amigos/blob/master/artifacts/login_use_case_diagram.jpg)
+* [Project Code](https://github.com/maheswarreddy01/GVSU-CIS641-Amigos/tree/master/src)
+
 
