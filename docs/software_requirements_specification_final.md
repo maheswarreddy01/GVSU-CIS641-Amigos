@@ -125,3 +125,46 @@ The SRS document specifies the working example of our website “Gift me!”. Th
 | NFR24 | System shall protect the admin rights.  |
 | NFR25 | The system shall guarantee the privacy of payment transactions and credit/debit card details. |
 
+
+# Change management plan
+To implement changes as required every company or organization needs to make changes with a specific plan, procedure and roles called change management plan. For any successful business changes are important which are mostly done with feedback and the requirements of the users and sometimes with the changing trends as well. Business should focus on how to implement the changes; with what procedures they can achieve it and who should be responsible in implementing these changes. In order to succussed organizations should be quick to get these changes done and sometimes even with trial-and-error methods changes can be made.
+
+**How will you train people to use it?**
+We can't anticipate our website to operate at peak efficiency without the correct direction or instruction. The application's workflow must first be thoroughly explained to every support service, and any potential problems that may arise during implementation must be fixed. The application is self-explanatory to all the users. A virtual navigator is displayed on the screen of the first-time users, explaining how each and every functionality works. A PDF is also provided in the help center, at the bottom of the application, explaining how the application works. User can access this document. If the user is stuck with any problem which cannot be solved, user can directly contact the support service and get the issue resolved.
+
+**How will you ensure it integrates within their ecosystem / software?**
+In the past, individuals sent greeting cards to their loved ones and well-wishers via mail. With the help of our application, customers can select a greeting card in this digital age based on their interests and the occasion, rather of travelling to a store to buy one. By offering online greeting cards, consumers can choose the templates of their interest from the website, add them to their shopping carts and then place the order. People can save time and effort by using their phones and computers to shop for greeting cards whenever they want to. The user has the option to return or cancel the order if they were unhappy with the greeting card. This application helps in increase of sales of the products, as it has customers from different places. Thus, the load on the consumers will be lessened as a result of this system's integration with already-existing software and centralization of the entire system, allowing for the acquisition of the necessary data.
+
+**How will you ensure that it any discovered issues are resolved?**
+The issues discovered during the development of the application can be resolved on performing web testing, before the code is deployed to end user. Functionality of the system based on the client requirements, security and the accuracy of the system are the main aspects where testing need to be performed thoroughly. Functional testing is carried out to verify the functionality of attributes such as UI, database, security, APIs. If user missed any mandatory input field, an error message shall be displayed.  Business flow is checked from beginning to end, which guides the user across numerous web pages to complete the task. Verified numerous tests on taking a negative scenario and verified if relevant error messages are getting displayed or not. Integration testing is performed to check if the buttons and links are working as expected and redirects to the expected page. If the customer requests any change management modifications, the complete program must be tested repeatedly from beginning to end to ensure that there has been no failure.
+
+
+
+# Traceability links
+<Description of this section>
+## Use Case Diagram Traceability
+| Artifact ID | Artifact Name | Requirement ID |
+| :-------------: | :----------: | :----------: |
+| UseCase1 | Move Player | FR5 |
+| … | … | … |
+## Class Diagram Traceability
+| Artifact Name | Requirement ID |
+| :-------------: |:----------: |
+| classPlayer | NFR3, FR5 |
+| … | … | … |
+## Activity Diagram Traceability
+<In this case, it makes more sense (I think, feel free to disagree) to link
+to the file and to those requirements impacted>
+| Artifact ID | Artifact Name | Requirement ID |
+| :-------------: | :----------: | :----------: |
+| <filename> | Handle Player Input | FR1-5, NFR2 |
+| … | … | … |
+
+
+
+# Software Artifacts
+<This section contains artifacts from the software that we created. for illustration purposes Diagrams, activity diagrams, and class diagrams are all examples of diagrams.>
+* [Activity diagram placing order](https://github.com/maheswarreddy01/GVSU-CIS641-Amigos/blob/master/artifacts/activity_diagram_placing_order.jpg)
+* [Activity diagram based on search](https://github.com/maheswarreddy01/GVSU-CIS641-Amigos/blob/master/artifacts/activity_diagram_based_on_search.jpg)
+* [Login use case diagram](https://github.com/maheswarreddy01/GVSU-CIS641-Amigos/blob/master/artifacts/login_use_case_diagram.jpg)
+
