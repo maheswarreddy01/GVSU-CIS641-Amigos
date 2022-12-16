@@ -1,0 +1,21 @@
+Team name: Amigos
+
+Members present: Maheswar Reddy Peram, Chetana Alekhya Reddy Gorre, Thummala SriramCharan, Harthik Chowdary Ravipati
+
+Date: 2022/11/07
+
+Time: 9.00 PM
+
+Discussion points:
+
+completed on the backend development fof login and signup and started with integration
+
+Goals for next week
+
+ Written APIs to to retrieve data from database based on request
+
+ Tested few front end screen for dispay fonts and CSS styling
+
+ Took a look at overview of database
+
+ Continue with backend development ,complete all the classes required.

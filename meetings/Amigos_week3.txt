@@ -1,0 +1,19 @@
+Team name: Amigos
+
+Members present: Maheswar Reddy Peram, Chetana Alekhya Reddy Gorre, Thummala SriramCharan, Harthik Chowdary Ravipati
+
+Date: 2022/10/24
+
+Time: 5.30 PM
+
+Discussion points:
+
+Created clickup task for design of the login screen ,login screen, landing screens.
+
+Goals for next week 
+
+ start working on login Page, signUp page.
+
+ overview of databasefor the login and signup.
+
+ Start with backend Api developmentfor the login and signup pages. 

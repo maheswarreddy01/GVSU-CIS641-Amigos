@@ -1,0 +1,15 @@
+Team name: Amigos
+
+Members present: Maheswar Reddy Peram, Chetana Alekhya Reddy Gorre, Thummala SriramCharan, Harthik Chowdary Ravipati
+
+Date: 2022/11/06
+
+Time: 9.00 PM
+
+Discussion points:
+
+  Discussed the use case diagrams for the adding cart and payments integration.
+
+Goals for next week 
+
+  Complete all the other use case diagrams of the Gift Me!.

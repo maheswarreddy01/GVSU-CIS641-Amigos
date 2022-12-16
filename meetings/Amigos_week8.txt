@@ -1,0 +1,19 @@
+Team name: Amigos
+
+Members present: Maheswar Reddy Peram, Chetana Alekhya Reddy Gorre, Thummala SriramCharan, Harthik Chowdary Ravipati
+
+Date: 2022/11/29
+
+Time: 9.00 PM
+
+Discussion points:
+
+Discussion payment integration and orders page.
+
+Goals for next week 
+
+ Admin dashboard and admin access.
+
+ Testing addcart and api's assocciated with it.
+
+ Start on orders both view and controller.

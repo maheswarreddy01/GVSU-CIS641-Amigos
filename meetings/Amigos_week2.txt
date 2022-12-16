@@ -1,0 +1,15 @@
+Team name: Amigos
+
+Members present: Maheswar Reddy Peram, Chetana Alekhya Reddy Gorre, Thummala SriramCharan, Harthik Chowdary Ravipati
+
+Date: 2022/10/18
+
+Time: 9.00 PM
+
+Discussion points:
+
+  Discussed the use case description for the website, class diagrams and activity diagrams that needs to draw for the Gift Me!.
+
+Goals for next week 
+
+  Deviding work to complete in best way.

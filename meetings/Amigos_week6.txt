@@ -1,0 +1,19 @@
+Team name: Amigos
+
+Members present: Maheswar Reddy Peram, Chetana Alekhya Reddy Gorre, Thummala SriramCharan, Harthik Chowdary Ravipati
+
+Date: 2022/11/15
+
+Time: 9.00 PM
+
+Discussion points:
+
+Discussion about otp integration the other requirements such as home screen add cart.
+
+Goals for next week 
+
+ fixng login screen issues.
+
+ testing realtime user with the email and passwords to find more bugs.
+
+ integration of otp.

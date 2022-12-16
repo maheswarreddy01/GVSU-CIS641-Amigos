@@ -1,0 +1,19 @@
+Team name: Amigos
+
+Members present: Maheswar Reddy Peram, Chetana Alekhya Reddy Gorre, Thummala SriramCharan, Harthik Chowdary Ravipati
+
+Date: 2022/11/29
+
+Time: 9.00 PM
+
+Discussion points:
+
+ Discussion about the final testing and admin views.
+
+Goals for next week 
+
+ Bug fixes for the admin view.
+
+ Bug fixes for the orders view.
+
+ Bug fixes for the delete product.
